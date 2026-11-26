@@ -1,0 +1,12 @@
+node_modules/
+.next/
+*.tsbuildinfo
+.env
+.env.local
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+.vercel/
+python-yolo/*.csv
+web/public/ort/
