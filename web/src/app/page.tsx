@@ -129,7 +129,7 @@ export default function HomePage() {
     requireVest: true,
     requireMask: false,
   });
-  const [confThreshold, setConfThreshold] = useState<number>(0.45);
+  const [confThreshold, setConfThreshold] = useState<number>(0.7);
 
   const [compliance, setCompliance] =
     useState<FrameCompliance>(EMPTY_COMPLIANCE);

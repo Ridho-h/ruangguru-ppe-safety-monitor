@@ -259,7 +259,7 @@ def run_live_monitor(
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Real-time K3 PPE Monitor (OpenCV + ONNX)")
     parser.add_argument("--source", default="0", help="Webcam index (0) atau path video/RTSP")
-    parser.add_argument("--conf", type=float, default=0.45, help="Confidence threshold")
+    parser.add_argument("--conf", type=float, default=0.70, help="Confidence threshold")
     args = parser.parse_args()
     src: str | int = int(args.source) if args.source.isdigit() else args.source
     run_live_monitor(source=src, conf_threshold=args.conf)
